@@ -2,7 +2,8 @@
 
 module.exports = {
     newRow: (object) => {
-        return '<tr><td>' + object.id + '</td><td>' + object.name +
+        let number = object.id+1;
+        return '<tr><td>' + number + '</td><td>' + object.name +
             '</td><td>' +
             '<a class="delete" id='+object.id+' href="#delete">Удалить</a> | ' +
             '<a class="update" href="#update">Изменить</a>' +
